@@ -5,7 +5,7 @@
 Затем:
 Ubuntu
 1. Произвести минимальную настройку (время, локаль, custom motd)
-[screenshot](https://github.com/Flyn88/PNG/blob/main/Data.png)
+[screenshot] (https://github.com/Flyn88/PNG/blob/main/Data.png)
 2. Определить точную версию ядра.
 3. Вывести список модулей ядра и записать в файл
 4. Просмотреть информацию о процессоре и модулях оперативной памяти
