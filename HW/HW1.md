@@ -48,7 +48,10 @@ Ubuntu
 ![screen](https://github.com/Flyn88/PNG/blob/main/5/hard.png)
 
 6. Добавить в виртуальную машину второй сетевой интерфейс (вывести информацию о нем в виртуалках)
-![screen]()
+
+![screen](https://github.com/Flyn88/PNG/blob/main/6/Vmware.png)
+![screen](https://github.com/Flyn88/PNG/blob/main/6/interface.png)
+
 7. (**) Узнать полную информацию об использованной и неиспользованной памяти
 
 ![screen](https://github.com/Flyn88/PNG/blob/main/7/7.png)
