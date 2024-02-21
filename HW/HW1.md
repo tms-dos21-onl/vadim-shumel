@@ -103,7 +103,7 @@ c) Подключаюсь к ubuntu по ssh ключу, через cmd
 ![screen](https://github.com/Flyn88/PNG/blob/main/8/2.png)
 
 
-10. (**) Вывести список файловых систем, которые поддерживаются ядром
+9. (**) Вывести список файловых систем, которые поддерживаются ядром
 
 ![screen](https://github.com/Flyn88/PNG/blob/main/9/1.png)
 
