@@ -102,10 +102,10 @@ c) Подключаюсь к ubuntu по ssh ключу, через cmd
 
 ![screen](https://github.com/Flyn88/PNG/blob/main/8/2.png)
 
-![screen]()
 
 10. (**) Вывести список файловых систем, которые поддерживаются ядром
-![screen]()
+
+![screen](https://github.com/Flyn88/PNG/blob/main/9/1.png)
 
 Centos
 1. Произвести минимальную настройку (время, локаль, custom motd)
