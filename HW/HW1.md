@@ -62,24 +62,24 @@ a) Создам на windows машине свой ssh ключ (публичн�
 ![screen](https://github.com/Flyn88/PNG/blob/main/8/1.png)
 
 b) Далее, в Ubuntu устанавливаю пакет openssh-server
-''' sudo apt update
-sudo apt install openssh-server '''
+``` sudo apt update ```
+``` sudo apt install openssh-server ```
 Создаю нового пользователя new_admin_server
-''' sudo adduser new_admin_user '''
+``` sudo adduser new_admin_user ```
 Далее отключаю авторизацию по паролю через ssh
-''' sudo nano /etc/ssh/sshd_config '''
+``` sudo nano /etc/ssh/sshd_config ```
    PasswordAuthentification no
 Создам новую дерикторию для пользователя и установлю права доступа
-''' sudo mkdir /home/new_admin_user/.ssh
-   sudo chmod 700 /home/new_admin_user/.ssh
-   sudo chown new_admin_user:new_admin_user /home/new_admin_user/.ssh '''
+``` sudo mkdir /home/new_admin_user/.ssh ```
+``` sudo chmod 700 /home/new_admin_user/.ssh ```
+``` sudo chown new_admin_user:new_admin_user /home/new_admin_user/.ssh ```
 Теперь добавлю публичный ключ, ранее созданный в windows, в файл:
-'''  sudo nano /home/new_admin_user/.ssh/authorized_keys '''
+```  sudo nano /home/new_admin_user/.ssh/authorized_keys ```
 Установлю права доступа:
-'''  sudo chmod 600 /home/new_admin_user/.ssh/authorized_keys
-   sudo chown new_admin_user:new_admin_user /home/new_admin_user/.ssh/authorized_keys '''
+``` sudo chmod 600 /home/new_admin_user/.ssh/authorized_keys ```
+   ``` sudo chown new_admin_user:new_admin_user /home/new_admin_user/.ssh/authorized_keys ```
 Перезапускаю ssh службу
-'''   sudo service ssh restart '''
+```   sudo service ssh restart ```
 
 c) Подключаюсь к ubuntu по ssh ключу, через cmd 
 
