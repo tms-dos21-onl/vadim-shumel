@@ -62,8 +62,10 @@ a) Создам на windows машине свой ssh ключ (публичн�
 ![screen](https://github.com/Flyn88/PNG/blob/main/8/1.png)
 
 b) Далее, в Ubuntu устанавливаю пакет openssh-server
+
 ``` sudo apt update ```
 ``` sudo apt install openssh-server ```
+
 Создаю нового пользователя new_admin_server
 ``` sudo adduser new_admin_user ```
 Далее отключаю авторизацию по паролю через ssh
