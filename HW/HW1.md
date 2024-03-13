@@ -110,12 +110,51 @@ c) Подключаюсь к ubuntu по ssh ключу, через cmd
 Centos
 1. Произвести минимальную настройку (время, локаль, custom motd)
 
-2. Определить точную версию ядра.
+   a) Date
+   
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/1/date_CentOS.png)
+
+   b) Locale
+   
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/1/Locale_1.png)
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/1/Locale_2.png)
+
+   c) Motd
+   
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/1/motd_1.png)
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/1/motd_2.png)
+
+3. Определить точную версию ядра.
+
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/2/uname.png)
+
 3. Вывести список модулей ядра и записать в файл
+
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/3/lsmod.png)
+
 4. Просмотреть информацию о процессоре и модулях оперативной памяти
+
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/4/Lscpu.png)
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/4/memory.png)
+
 5. Получить информацию о жестком диске
+
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/5/lsbk.png)
+
 6. Добавить в виртуальную машину второй сетевой интерфейс (вывести информацию о нем в виртуалках)
+
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/6/Vmware.png)
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/6/ethernets.png)
+
 7. (**) Узнать полную информацию об использованной и неиспользованной памяти
+
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/7/Free.png)
+
 8. (**) Создать пользователя new_admin_user, Настроить ssh доступ пользователю по ключу на VM, запретить ему авторизацию по паролю
+
+![screen]()
+![screen]()
+
 9. (**) Вывести список файловых систем, которые поддерживаются ядром
 
+![screen](https://github.com/Flyn88/PNG/blob/main/HW1/Centosas/9/filesystems.png)
