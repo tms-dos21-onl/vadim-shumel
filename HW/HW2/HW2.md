@@ -121,6 +121,10 @@ Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes 
 ```
+Мой добавленный виртуальный диск
+```
+Disk /dev/sdb: 10 GiB, 10737418240 bytes, 20971520 sectors
+```
 3. Создать нового пользователя penguin с home-директорией /mnt/home/penguin.
 
 4. Создать новую группу пользователей birds, перенести в нее пользователя penguin.
