@@ -1,7 +1,6 @@
 
 1. Создать новый виртуальный жёсткий диск, присоеденить его к VM, создать раздел (partition) и инициализировать на нём файловую системую.
 ![screen](https://github.com/Flyn88/PNG/blob/main/HW2/1/1.png)
-2. Смонтировать директорию /mnt/home на только что созданный раздел.
 ```
  vadim@vadim-virtual-machine:~$ sudo fdisk -l
 [sudo] password for vadim:
@@ -125,6 +124,102 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 ```
 Disk /dev/sdb: 10 GiB, 10737418240 bytes, 20971520 sectors
 ```
+```
+vadim@vadim-virtual-machine:~$ sudo fdisk /dev/sdb
+[sudo] password for vadim:
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table.
+Created a new DOS disklabel with disk identifier 0x90c6b78e.
+
+Command (m for help):
+```
+Ввожу "m" для справки
+```
+Help:
+
+  DOS (MBR)
+   a   toggle a bootable flag
+   b   edit nested BSD disklabel
+   c   toggle the dos compatibility flag
+
+  Generic
+   d   delete a partition
+   F   list free unpartitioned space
+   l   list known partition types
+   n   add a new partition
+   p   print the partition table
+   t   change a partition type
+   v   verify the partition table
+   i   print information about a partition
+
+  Misc
+   m   print this menu
+   u   change display/entry units
+   x   extra functionality (experts only)
+
+  Script
+   I   load disk layout from sfdisk script file
+   O   dump disk layout to sfdisk script file
+
+  Save & Exit
+   w   write table to disk and exit
+   q   quit without saving changes
+
+  Create a new label
+   g   create a new empty GPT partition table
+   G   create a new empty SGI (IRIX) partition table
+   o   create a new empty DOS partition table
+   s   create a new empty Sun partition table
+
+
+Command (m for help):
+```
+Далее создаю новый раздел "n"
+```
+Command (m for help): n
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
+Select (default p):
+```
+По шагово соглашаемся
+```
+Select (default p): p
+Partition number (1-4, default 1):
+First sector (2048-20971519, default 2048):
+vadim@vadim-virtual-machine:~$
+
+Created a new partition 1 of type 'Linux' and of size 10 GiB.
+```
+Вывожу таблицу разделов:
+```
+Command (m for help): p
+Disk /dev/sdb: 10 GiB, 10737418240 bytes, 20971520 sectors
+Disk model: VMware Virtual S
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x1fd3b10e
+
+Device     Boot Start      End  Sectors Size Id Type
+/dev/sdb1        2048 20971519 20969472  10G 83 Linux
+```
+Делаю раздел для записи "w"
+```
+Command (m for help): w
+The partition table has been altered.
+Syncing disks.
+```
+Далее создаю файловую сисмтему. Форматирую диск с помощью команды:
+```
+
+2. Смонтировать директорию /mnt/home на только что созданный раздел.
+
 3. Создать нового пользователя penguin с home-директорией /mnt/home/penguin.
 
 4. Создать новую группу пользователей birds, перенести в нее пользователя penguin.
