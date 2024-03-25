@@ -216,7 +216,9 @@ The partition table has been altered.
 Syncing disks.
 ```
 Далее создаю файловую сисмтему. Форматирую диск с помощью команды:
-
+~~~
+sudo mkfs.ext4 /dev/sdb1
+~~~
 
 2. Смонтировать директорию /mnt/home на только что созданный раздел.
 
